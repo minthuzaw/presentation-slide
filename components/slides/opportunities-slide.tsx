@@ -1,9 +1,7 @@
 "use client";
 
 import SlideContainer from '@/components/slides-container';
-import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
-import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Info } from 'lucide-react';
 
@@ -14,7 +12,7 @@ export default function OpportunitiesSlide() {
         <div className="grid grid-cols-1 gap-10">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-              Opportunities on <span className="text-yellow-500">Binance</span>
+              Earning on <span className="text-yellow-500">Binance</span>
             </h2>
             <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
               Beyond trading, Binance offers unique ways to earn and grow your cryptocurrency holdings

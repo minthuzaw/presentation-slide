@@ -5,12 +5,12 @@ import SlideContainer from '@/components/slides-container';
 import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+// import {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from '@/components/ui/accordion';
 
 export default function BeginnerCoinsSlide() {
   const beginnerCoins = [
@@ -44,20 +44,20 @@ export default function BeginnerCoinsSlide() {
     },
   ];
 
-  const faqs = [
-    {
-      question: 'What is a stablecoin?',
-      answer: 'Stablecoins are cryptocurrencies designed to minimize price volatility by pegging their value to a stable asset, usually the US dollar. Examples include USDT, USDC, and BUSD.'
-    },
-    {
-      question: 'How much should I invest as a beginner?',
-      answer: 'Only invest what you can afford to lose. Many beginners start with small amounts, such as $100-$1,000, to learn the process before increasing their investment.'
-    },
-    {
-      question: 'Where should I store my crypto?',
-      answer: 'For smaller amounts, exchange wallets like Binance are convenient. For larger holdings, consider hardware wallets like Ledger or Trezor for enhanced security.'
-    }
-  ];
+  // const faqs = [
+  //   {
+  //     question: 'What is a stablecoin?',
+  //     answer: 'Stablecoins are cryptocurrencies designed to minimize price volatility by pegging their value to a stable asset, usually the US dollar. Examples include USDT, USDC, and BUSD.'
+  //   },
+  //   {
+  //     question: 'How much should I invest as a beginner?',
+  //     answer: 'Only invest what you can afford to lose. Many beginners start with small amounts, such as $100-$1,000, to learn the process before increasing their investment.'
+  //   },
+  //   {
+  //     question: 'Where should I store my crypto?',
+  //     answer: 'For smaller amounts, exchange wallets like Binance are convenient. For larger holdings, consider hardware wallets like Ledger or Trezor for enhanced security.'
+  //   }
+  // ];
 
   return (
     <div className="w-full h-full bg-gradient-to-br from-background to-blue-950/5">
@@ -135,7 +135,7 @@ export default function BeginnerCoinsSlide() {
             </div>
           </div>
 
-          <Accordion type="single" collapsible className="bg-card/80 backdrop-blur-sm rounded-xl p-6 border border-card/10">
+          {/* <Accordion type="single" collapsible className="bg-card/80 backdrop-blur-sm rounded-xl p-6 border border-card/10">
             <h3 className="font-bold text-xl mb-4">Frequently Asked Questions</h3>
             {faqs.map((faq, index) => (
               <AccordionItem key={`faq-${index}`} value={`faq-${index}`}>
@@ -145,7 +145,7 @@ export default function BeginnerCoinsSlide() {
                 </AccordionContent>
               </AccordionItem>
             ))}
-          </Accordion>
+          </Accordion> */}
         </div>
       </SlideContainer>
     </div>
