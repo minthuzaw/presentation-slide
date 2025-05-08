@@ -7,7 +7,6 @@ import BnbCoinSlide from '@/components/slides/bnb-coin-slide';
 import OpportunitiesSlide from '@/components/slides/opportunities-slide';
 import ConclusionSlide from '@/components/slides/conclusion-slide';
 import EarningSlide from '@/components/slides/earning-slide-ss';
-import ThankYouSlide from '@/components/slides/thank-you-slide';
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <OpportunitiesSlide />
       <EarningSlide />
       <ConclusionSlide />
-      <ThankYouSlide />
     </PresentationLayout>
   );
 }

@@ -61,13 +61,13 @@ export default function ConclusionSlide() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <Button
+            {/* <Button
               size="lg"
               className="bg-yellow-500 hover:bg-yellow-600 text-black"
               onClick={() => window.open('https://www.binance.com', '_blank')}
             >
               Visit Binance <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
+            </Button> */}
 
             {/* <Button
               size="lg"

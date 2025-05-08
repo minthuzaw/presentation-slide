@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import SlideContainer from '@/components/slides-container';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export default function ThankYouSlide() {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -29,7 +30,8 @@ export default function ThankYouSlide() {
               "transition-all duration-1000",
               animationComplete ? "opacity-100" : "opacity-0 transform translate-y-10"
             )}>
-              Thank You <br /> For Your Time!
+              {/* Thank You <br /> For Your Time! */}
+              <Image src="/images/thank-you.gif" width={500} height={500} alt="Thank You" className="mx-auto" />
             </h1>
           </div>
     	</div>
