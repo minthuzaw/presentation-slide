@@ -1,37 +1,40 @@
 "use client";
 
 import SlideContainer from '@/components/slides-container';
-import { cn } from '@/lib/utils';
-import { Card, CardContent } from '@/components/ui/card';
-import Image from 'next/image';
-import { Users, Coins, BarChart3, Globe } from 'lucide-react';
+import { BarChart3, Coins, Globe, Users } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { cn } from "@/lib/utils"
 
 export default function BinanceSlide() {
   const stats = [
     {
-      label: 'Active Users',
-      value: '150M+',
+      label: "Active Users",
+      value: "150M+",
       icon: Users,
-      color: 'text-blue-500'
+      color: "text-blue-500",
+      hoverBg: "hover:bg-blue-800 dark:hover:bg-blue-500",
     },
     {
-      label: 'Cryptocurrencies',
-      value: '350+',
+      label: "Cryptocurrencies",
+      value: "350+",
       icon: Coins,
-      color: 'text-yellow-500'
+      color: "text-yellow-500",
+      hoverBg: "hover:bg-yellow-50 dark:hover:bg-yellow-500",
     },
     {
-      label: 'Daily Volume',
-      value: '$76B+',
+      label: "Daily Volume",
+      value: "$76B+",
       icon: BarChart3,
-      color: 'text-green-500'
+      color: "text-green-500",
+      hoverBg: "hover:bg-green-50 dark:hover:bg-green-500",
     },
     {
-      label: 'Countries',
-      value: '180+',
+      label: "Countries",
+      value: "180+",
       icon: Globe,
-      color: 'text-purple-500'
-    }
+      color: "text-purple-500",
+      hoverBg: "hover:bg-purple-50 dark:hover:bg-purple-500",
+    },
   ];
 
   return (
@@ -51,10 +54,14 @@ export default function BinanceSlide() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {stats.map((stat, index) => (
-              <Card key={`stat-${index}`} className={cn(
-                "backdrop-blur-sm border-none",
-                "bg-gradient-to-br from-card/80 to-card/40"
-              )}>
+              <Card
+                key={`stat-${index}`}
+                className={cn(
+                  "backdrop-blur-sm border-none transition-all duration-300",
+                  "bg-gradient-to-br from-card/80 to-card/40",
+                  stat.hoverBg,
+                )}
+              >
                 <CardContent className="p-6 text-center">
                   <stat.icon className={cn("h-8 w-8 mx-auto mb-2", stat.color)} />
                   <h3 className="text-3xl font-bold">{stat.value}</h3>

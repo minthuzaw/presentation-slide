@@ -37,8 +37,6 @@ export default function ConclusionSlide() {
           </div>
 
           <div className="bg-card/80 backdrop-blur-sm rounded-xl p-6 border border-card/10 max-w-3xl mx-auto">
-            <h3 className="font-bold text-xl mb-4">What You&apos;ve Learned</h3>
-
             <div className="space-y-3">
               {summaryPoints.map((point, index) => (
                 <div key={`summary-${index}`} className="flex items-start">
